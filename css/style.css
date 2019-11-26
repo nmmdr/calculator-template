@@ -59,12 +59,12 @@ select {
   20% {
     background:rgb rgb(167, 238, 197);
   }
-  40% {
+  /* 40% { 
    background: rgb(131, 211, 184);
   }
   60% {
    background: rgb(137, 197, 164);
-  }
+  }*/
   80% {
    background: rgb(186, 233, 223);
   }
@@ -80,12 +80,12 @@ select {
      20% {
        background:rgb rgb(167, 238, 197);
      }
-     40% {
+     /* 40% {
       background: rgb(131, 211, 184);
      }
      60% {
       background: rgb(115, 219, 205);
-     }
+     } */
      80% {
       background: rgb(186, 233, 223);
      }

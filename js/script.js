@@ -21,6 +21,9 @@ calcForm.addEventListener('submit', function (e) {
    let secondNumber = parseInt(e.target[2].value);
    // already defined operation and result container outside of the form
 
+   var words = ['smile','positivity','lucky','loved','cheer'];
+   console.log
+
    // // one strategy is to use a combination of if/else statements (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
    // if (operation.value === 'add') {
    //    calculatorResult = firstNumber + secondNumber;
@@ -37,5 +40,42 @@ calcForm.addEventListener('submit', function (e) {
    //       calculatorResult = 0;
    // }
 
+    // another strategy is to use a switch statement (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+    switch (operation.value) {
+       case 'add':
+          calculatorResult = firstNumber + secondNumber;
+          break;
+    }
+
+    switch (operation.value) {
+      case 'subtract':
+         calculatorResult = firstNumber - secondNumber;
+         break;
+   }
+   switch (operation.value) {
+      case 'multiply':
+         calculatorResult = firstNumber * secondNumber;
+         break;
+   }
+   switch (operation.value) {
+      case 'divide':
+         calculatorResult = firstNumber / secondNumber;
+         break;
+   }
+   switch (operation.value) {
+      case 'randomwords':
+         calculatorResult =  words[Math.floor(Math.random()*5)];
+         
+   
+
+      
+
+
+         
+         break;
+   }
+      //  default: {
+      //calculatorResult = 0;
+   //  } 
    result.value = calculatorResult;
 });
